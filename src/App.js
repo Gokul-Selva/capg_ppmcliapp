@@ -7,11 +7,13 @@ import AddProject from './components/projects/AddProject';
 
 function App() {
   return (
+
     <Router>
     <HeaderComponent/>
     <Route exact path="/dashboard" component={Dashboard}/>
     <Route exact path="/addProject" component={AddProject}/>
     </Router>
+  
   );
 }
 
