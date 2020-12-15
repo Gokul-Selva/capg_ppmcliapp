@@ -1,7 +1,15 @@
 import React from 'react';
-import ProejctItemComponent from './ProjectItemComponent'
+import ProejctItemComponent from './ProjectItemComponent';
+import CreateProjectButton from './projects/CreateProjectButton';
 
 class Dashboard extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.state={
+            projects:[]
+        }
+    }
     render(){
         return(
             <div className="projects">
@@ -10,9 +18,7 @@ class Dashboard extends React.Component {
                     <div className="col-md-12">
                         <h1 className="display-4 text-center">Projects</h1>
                         <br />
-                        <a href="ProjectForm.html" className="btn btn-lg btn-info">
-                            Create a Project
-                        </a>
+                        <CreateProjectButton/>
                         <br />
                         <hr />
     
