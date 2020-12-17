@@ -99,4 +99,8 @@ class AddProject extends Component {
     }
 }
 
-export default AddProject;
+AddProject.propTypes = {
+    createProject:PropTypes.func.isRequired
+}
+
+export default connect(null,{createProject})(AddProject);

@@ -22,7 +22,7 @@ class Dashboard extends React.Component {
                         <br />
                         <hr />
     
-                       <ProjectItemComponent/>
+                       <ProjectItemComponent />
     
                     </div>
                 </div>
